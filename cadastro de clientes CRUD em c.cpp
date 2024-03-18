@@ -1,3 +1,4 @@
+
 // projeto de cadastro de cliente
 //crud em C
 
@@ -10,8 +11,8 @@
 
 int main(){
 setlocale(LC_ALL,"Portuguese"); //continuação da biblioteca acima 
-char nomecadastro[41]; //variavel para aceitar letras
-float cadastro,cadastro1,consulta,idconsulta,atualizaçao,deletar,idcadastro,; // dando erro na hora de execução
+char nomecadastro[61]; //variavel para aceitar letras
+float cadastro,consulta,atualizaçao,deletar,cadastro1,idcadastro,nomecadastro,idconsulta // dando erro
 
 printf("\n\n ---- CADASTRO DE CLIENTES ---- \n\n");
 
@@ -51,7 +52,7 @@ if(consulta==1){
 	printf("digite o id de consulta");
 	scanf("%f",&idconsulta);
 	while (idconsulta==idcadastro){
-		printf("\n %f, \n %s"idcadastro,nomecadastro,cadastro1);
+		printf("\n %f,\n %f, \n %s"idcadastro,nomecadastro,cadastro1);
 	}
 	
 }
@@ -59,5 +60,5 @@ if(consulta==1){
 
 // criar o else if
 // fechar o else 
-
+return 0;
 }
