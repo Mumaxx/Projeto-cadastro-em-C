@@ -3,29 +3,29 @@
 
 #include<stdio.h>
 #include<math.h>
-#include<locale.h> //biblioteca para usar acentua鋏es
+#include<locale.h> //biblioteca para usar acentuaﾃｧﾃｵes
 
 
 
 
 int main(){
-setlocale(LC_ALL,"Portuguese"); //continua鈬o da biblioteca acima 
+setlocale(LC_ALL,"Portuguese"); //continuaﾃｧﾃ｣o da biblioteca acima 
 char nomecadastro[41]; //variavel para aceitar letras
-float cadastro,cadastro1,consulta,idconsulta,atualiza軋o,deletar,idcadastro,; // dando erro
+float cadastro,cadastro1,consulta,idconsulta,atualizaﾃｧao,deletar,idcadastro,; // dando erro na hora de execuﾃｧﾃ｣o
 
 printf("\n\n ---- CADASTRO DE CLIENTES ---- \n\n");
 
-printf("\n CRIAR CADASTRO \n 1-SIM  2-NﾃO\n");
+printf("\n CRIAR CADASTRO \n 1-SIM  2-Nﾃグ\n");
 printf("\n--------\n");
 scanf("%f",&cadastro);
 
-printf("\n CONSULTAR CONSULTA\n 11-SIM  12-NﾃO\n");
+printf("\n CONSULTAR CONSULTA\n 11-SIM  12-Nﾃグ\n");
 scanf("%f",&consulta);
 
-printf("\n ATUALIZAR CADASTRO \n 21-SIM  22-NﾃO\n");
-scanf("%f",&atualiza軋o);
+printf("\n ATUALIZAR CADASTRO \n 21-SIM  22-Nﾃグ\n");
+scanf("%f",&atualizaﾃｧao);
 
-printf("\n DELETAR CADASTRO \n 31-SIM  32-NﾃO\n");
+printf("\n DELETAR CADASTRO \n 31-SIM  32-Nﾃグ\n");
 scanf("%f",&deletar);
 printf("\n\n--------\n \n");
 
