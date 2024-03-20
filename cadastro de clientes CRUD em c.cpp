@@ -11,50 +11,55 @@
 int main(){
 setlocale(LC_ALL,"Portuguese"); //continuação da biblioteca acima 
 char nomecadastro[61]; //variavel para aceitar letras
-float cadastro,consulta,atualizaçao,deletar,cadastro1,idcadastro,nomecadastro,nomeconsulta; // dando erro
+  int cadastro, consulta, atualizacao, deletar, cadastro1, idcadastro, idconsulta;// dando erro
 
 printf("\n\n ---- CADASTRO DE CLIENTES ---- \n\n");
 
-printf("\n CRIAR CADASTRO \n 1-SIM  2-NÃO\n");scanf("%f",&cadastro);
-scanf("%f",&cadastro);
+printf("\n CRIAR CADASTRO \n 1-SIM  2-NÃO\n");
+printf("\n");
+scanf("%d",&cadastro);
 printf("\n--------\n");
-
-printf("\n CONSULTAR CONSULTA\n 11-SIM  12-NÃO\n");
-scanf("%f",&consulta);
-
-printf("\n ATUALIZAR CADASTRO \n 21-SIM  22-NÃO\n");
-scanf("%f",&atualizaçao);
-
-printf("\n DELETAR CADASTRO \n 31-SIM  32-NÃO\n");
-scanf("%f",&deletar);
-printf("\n\n--------\n \n");
-
-
 if (cadastro==1){
-	printf("escolha um numero de 1 a 100");
-	scanf("%f",&idcadastro);
-	printf("digite seu nome e sobrenome \n");
+   	
+	printf("digite seu nome e sobrenome (sem espaço)\n");
 	scanf("%s",&nomecadastro);
 	printf("\n\n");
+	
 	printf("cpf \n");
 	scanf("%f",&cadastro1);
 	printf("\n\n");
+	
 	printf("rg \n ");
 	scanf("%f",&cadastro1);
 	printf("\n\n");
+	
 	printf("cep \n");
 	scanf("%f",&cadastro1);
 	printf("\n\n");	
+	
+	printf("escolha seu id (1 a 100)\n");
+	scanf("%f", &idcadastro);
+	printf("\n\n");
 }
 
-if(consulta==1){
-	printf("digite o id de consulta");
+printf("\n CONSULTAR CADASTRO\n 11-SIM  12-NÃO\n");
+scanf("%d",&consulta);
+if (consulta==1){
+	printf("digite o id do cadastro");
 	scanf("%f",&idconsulta);
-	while (idconsulta==idcadastro){ //while usado para verficar se os id´s são iguais
-		printf("\n %f,\n %f, \n %s"idcadastro,nomecadastro,cadastro1);
-	}
 	
+	}
 }
+
+printf("\n ATUALIZAR CADASTRO \n 21-SIM  22-NÃO\n");
+scanf("%d",&atualizacao);
+
+printf("\n DELETAR CADASTRO \n 31-SIM  32-NÃO\n");
+scanf("%d",&deletar);
+printf("\n\n--------\n \n");
+
+
+
 
 
 // criar o else if
