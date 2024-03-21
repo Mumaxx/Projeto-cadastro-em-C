@@ -10,7 +10,7 @@
 
 int main(){
 setlocale(LC_ALL,"Portuguese"); //continuação da biblioteca acima 
-char nomecadastro[61]; //variavel para aceitar letras
+char nomecadastro[61] ; //variavel para aceitar letras
   int cadastro, consulta, atualizacao, deletar, cadastro1, idcadastro, idconsulta;// dando erro
 
 printf("\n\n ---- CADASTRO DE CLIENTES ---- \n\n");
@@ -40,21 +40,25 @@ if (cadastro==1){
 	printf("escolha seu id (1 a 100)\n");
 	scanf("%f", &idcadastro);
 	printf("\n\n");
+	
 }
-
-printf("\n CONSULTAR CADASTRO\n 11-SIM  12-NÃO\n");
+ 
+printf("\n CONSULTAR CADASTRO\n 1-SIM  2-NÃO\n");
+printf("\n");
 scanf("%d",&consulta);
 if (consulta==1){
 	printf("digite o id do cadastro");
 	scanf("%f",&idconsulta);
-	
+	else if(idconsulta==idcadastro){ // erro nessa linha 
+		printf("%s",nomecadastro);
 	}
-}
+	}
 
-printf("\n ATUALIZAR CADASTRO \n 21-SIM  22-NÃO\n");
+
+printf("\n ATUALIZAR CADASTRO \n 1-SIM  2-NÃO\n");
 scanf("%d",&atualizacao);
 
-printf("\n DELETAR CADASTRO \n 31-SIM  32-NÃO\n");
+printf("\n DELETAR CADASTRO \n 1-SIM  2-NÃO\n");
 scanf("%d",&deletar);
 printf("\n\n--------\n \n");
 
